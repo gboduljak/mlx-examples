@@ -1,7 +1,7 @@
 from typing import Iterable, Optional, Tuple, Union
 from image_utils import ChannelDimension, infer_channel_dimension_format, to_channel_dimension_format, _rescale_for_pil_conversion, to_pil_image, rescale, get_image_size, get_channel_dimension_axis
 import PIL
-from image_constants import ImageInput
+from image_processor_constants import ImageInput
 import numpy as np
 from PIL import Image
 
