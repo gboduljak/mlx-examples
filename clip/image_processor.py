@@ -240,3 +240,13 @@ class CLIPImageProcessor:
         return normalize(
             image, mean=mean, std=std, data_format=data_format, input_data_format=input_data_format, **kwargs
         )
+
+
+if __name__ == "__main__":
+    mx_processor = CLIPImageProcessor("openai/clip-vit-base-patch32")
+
+    image = PIL.Image.open("cats.jpeg")
+
+    data = mx_processor(image)
+
+    print(data)
